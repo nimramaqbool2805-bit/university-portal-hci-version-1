@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>University Portal - Version 1</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">🎓 UNIVERSITY PORTAL</div>
+  <div class="toplinks">
+    <a href="#" data-page="home">Home</a><a href="#" data-modal="about">About</a><a href="#" data-modal="help">Help</a><a href="#" data-modal="contact">Contact</a>
+  </div>
+</header>
+<div class="layout">
+  <aside>
+    <h3>QUICK MENU</h3>
+    <a href="#" data-page="home">🏠 Home</a><a href="#" data-page="courses">📚 Courses</a><a href="#" data-page="fees">💰 Fees</a><a href="#" data-page="results">📊 Results</a><a href="#" data-page="attendance">📅 Attendance</a><a href="#" data-page="library">📖 Library</a><a href="#" data-page="settings">⚙ Settings</a><a href="#" data-modal="help">❓ Help</a>
+  </aside>
+  <main>
+    <section class="login-box" id="loginSection">
+      <h1>LOGIN TO CONTINUE!!!</h1><p class="small">Enter your details below (many formats accepted)</p>
+      <label>Username / Student ID / Email / Roll No.</label><input id="username" type="text" placeholder="e.g. Nimra or 12345">
+      <label>Password / CNIC / Other Password</label><input id="password" type="password" placeholder="Enter password">
+      <div class="checks"><input type="checkbox" id="remember"> <label for="remember">Remember me forever</label></div>
+      <div class="buttons"><button class="green" onclick="login()">LOGIN</button><button class="yellow" onclick="registerUser()">REGISTER</button><button class="red" onclick="forgotPassword()">FORGOT PASSWORD?</button></div>
+      <div class="quick"><h3>Quick Links</h3><ul>
+        <li><a href="#" data-action="student-login">Student Login</a></li><li><a href="#" data-action="faculty-login">Faculty Login</a></li><li><a href="#" data-page="fees">Online Fee Payment</a></li><li><a href="#" data-page="events">Exam Schedule</a></li><li><a href="#" data-page="results">Result Portal</a></li><li><a href="#" data-page="library">Library</a></li><li><a href="#" data-modal="complaint">Complaint Form</a></li>
+      </ul></div>
+      <div id="message"></div>
+    </section>
+    <section class="info-row"><div class="info yellow-box"><b>⚠ IMPORTANT</b><br>Fee deadline is near! Check notices immediately.</div><div class="info pink-box"><b>📞 CONTACT ADMIN</b><br><a href="tel:+92123456789">+92-123456789</a><br><a href="mailto:info@university.edu">info@university.edu</a></div></section>
+    <section id="contentPanel" class="content-panel hidden"></section>
+  </main>
+</div>
+<footer><a href="#" data-page="home">Home</a> | <a href="#" data-modal="help">Help</a> | <a href="#" data-modal="terms">Terms</a> | <a href="#" data-modal="privacy">Privacy</a> | <a href="#" data-modal="about">About Us</a> | <a href="#" data-modal="contact">Contact</a></footer>
+<div id="modal" class="modal hidden"><div class="modal-box"><button class="close" onclick="closeModal()">✕</button><div id="modalContent"></div></div></div>
+<script src="script.js"></script>
+</body></html>
